@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="materials.css">
+    <title>Začátek Hry</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="card__header">
+                <img class="card__image" src="images/output1.png" alt="Obrázek děje">
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Escape Ending</h2>
+                <p class="card__text">Utekl jsi skokem z okna a zachránilo ti to život, udělal sis potom vlastní výzkum a zjistil jsi, že zakázka byla pouze smyšlená. Dále jsi odhalil zlou pravdu Fixera policii a byl zneškodněn. Jen škoda, že ty peníze nedostaneš :,(</p>
+            
+            <div class="card__footer">
+            </div></div>
+        </div>
+    </div>
+    </main>
+    <audio autoplay loop class="background-music">
+        <source src="audios/Who's Ready for Tomorrow.mp3" type="audio/mp3">
+        Váš prohlížeč nepodporuje tag audio.
+    </audio>
+
+    <script>        function muteAllSounds() {
+        const audios = document.querySelectorAll("audio");
+        audios.forEach(audio => audio.volume = 0.01);
+    }
+    window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+
+</html>

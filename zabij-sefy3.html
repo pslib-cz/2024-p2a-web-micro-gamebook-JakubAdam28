@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabij korporáta</title>
+
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="card__header">
+                <img class="card__image"
+                    src="images/C52B15AFBFE43C3D35088F6363E51BEF66A2181A62AD7482DB2A7E778B7A5D4C.jpg"
+                    alt="Obrázek děje">
+            </div>
+            <div class="card__body">
+                <h2 class="card__title"></h2>
+                <p class="card__text">(Teda to jsem tu asi už dlouho nebyl, trochu se mi to tady nezdá, ale však vpohodě
+                    Fixera znám dlouho) "Fixere, že by sis to tu dal trochu dokupy? Ježiš tady to vypadá hrozně. Já bych
+                    pro tebe měl taky misi a to konečně začít uklízet"</p>
+            
+            <div class="card__footer">
+                <a href="zabij-sefy3,5.html" class="button">Pokračovat dál za Fixerem</a>
+                <a href="zabij-sefy6.html" class="button">"Fixere, hele víš ty co? Já ten cyberware nepotřebuju, kdybych
+                    toho měl mít ještě víc než mám, tak už by mi to lezlo na hlavu"</a>
+            </div></div>
+        </div>
+        </div>
+        <audio autoplay loop class="background-music">
+            <source src="audios/The Voice In My Head  Cyberpunk 2077 OST.mp3" type="audio/mp3">
+            Váš prohlížeč nepodporuje tag audio.
+        </audio>
+
+    </main>
+    <script>        function muteAllSounds() {
+            const audios = document.querySelectorAll("audio");
+            audios.forEach(audio => audio.volume = 0.01);
+        }
+        window.addEventListener('DOMContentLoaded', muteAllSounds);
+    </script>
+</body>
+
+</html>

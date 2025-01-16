@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="materials.css">
+    <title>Začátek Hry</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <div class="card__header">
+                <img class="card__image" src="images/output.png" alt="Obrázek děje">
+            </div>
+            <div class="card__body">
+                <h2 class="card__title">Začátek</h2>
+                <p class="card__text">Neonové světlo se odráží na mokrém asfaltu. V noci, kdy ulice Night City nespí nikdy, máš před sebou volbu, která určí tvůj osud. Jsi Runner s unikátní tolerancí chromu a proto používání cyberwaru ti nedělá žádný problém, nezávislý operátor, který se živí tím, co ostatní nedokážou nebo nechtějí udělat. Fixer, osoba, která tě napojuje na zakázky, ti nabízí dvě mise. Obě jsou nebezpečné, ale vysoce výnosné. Vyber si moudře.</p>
+            
+            <div class="card__footer">
+                <a href="zabij-sefy1.html" class="button">Eliminace nebezpečného korporáta</a>
+                <a href="cyberware-loupez1.html" class="button--cross">Loupež armádního cyberwaru</a>
+            </div></div>
+        </div>
+    </div>
+    </main>
+    <audio autoplay loop class="background-music">
+        <source src="audios/Who's Ready for Tomorrow.mp3" type="audio/mp3">
+        Váš prohlížeč nepodporuje tag audio.
+    </audio>
+
+    <script>        function muteAllSounds() {
+        const audios = document.querySelectorAll("audio");
+        audios.forEach(audio => audio.volume = 0.01);
+    }
+    window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="materials.css">
+    <title>Main Screen</title>
+</head>
+
+<body>
+    <div class="slideshow">
+        <img src="images/nightcity5.jpg" alt="obrázek města" class="active">
+        <img src="images/nightcity2.jpg" alt="obrázek města">
+        <img src="images/nightcity3.jpg" alt="obrázek města">
+        <img src="images/mainscreen3.jpg" alt="obrázek ze hry">
+    </div>
+
+    <div class="menu">
+        <h1>Cyberpunk-GameBook</h1>
+        <a id="clickButton" class="button" href="character.html">Nová hra</a>
+        <p>Autor: Jakub Adam</p>
+    </div>
+
+
+    <audio autoplay loop class="background-music">
+        <source src="audios/Cyberpunk 2077 - Soundtrack OST - Main Menu Theme 'In Game Version'.mp3" type="audio/mp3">
+        Váš prohlížeč nepodporuje tag audio.
+    </audio>
+
+
+    <audio id="clickSound">
+        <source src="audios/mixkit-handgun-click-1660.mp3" type="audio/mp3">
+        Váš prohlížeč nepodporuje tag audio.
+    </audio>
+
+
+    <script>
+        function muteAllSounds() {
+            const audios = document.querySelectorAll("audio");
+            audios.forEach(audio => audio.volume = 0.01);
+        }
+        const button = document.getElementById('clickButton');
+        const clickSound = document.getElementById('clickSound');
+
+        button.addEventListener('mouseover', function () {
+            clickSound.play();
+        });
+
+        const images = document.querySelectorAll('.slideshow img');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            images[currentIndex].classList.remove('active');
+
+            currentIndex = (currentIndex + 1) % images.length;
+
+            images[currentIndex].classList.add('active');
+        }, 5000);
+
+
+        window.addEventListener('DOMContentLoaded', muteAllSounds);
+    </script>
+</body>
+
+</html>

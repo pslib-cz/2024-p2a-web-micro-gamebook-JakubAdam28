@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabij korporáta</title>
+</head>
+<body>
+<main>
+    <div class="card">
+        <div class="card__header">
+            <img class="card__image" src="images/menu screen.jpg" alt="Obrázek děje">
+        </div>
+        <div class="card__body">
+            <h2 class="card__title">Zajetí Ending:</h2>
+            <p class="card__text">Vypadá to, že jsi nebyl schopný se udržet proti takové přesile a byl tak zajat mafií Biotech Systems. Tvůj život ušetřili, ale za jakou cenu.. Máš vysokou toleranci chromu, a proto ses stal jejich novým obětním beránkem, na kterém testují nový cyberware. Vypadá to, že už je jen otázkou času, kdy příjdeš o svůj veškerý rozum..</p>
+        
+        <div class="card__footer">
+        </div></div>
+    </div>
+</div>
+</main>
+<audio autoplay loop class="background-music">
+    <source src="audios/Voices in my Head Sound Effect Fx.mp3" type="audio/mp3">
+    Váš prohlížeč nepodporuje tag audio.
+</audio>
+
+<script>        function muteAllSounds() {
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => audio.volume = 0.01);
+}
+window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+</html>

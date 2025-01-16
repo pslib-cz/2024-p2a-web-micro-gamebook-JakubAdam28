@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabij korporáta</title>
+</head>
+<body>
+<main>
+    <div class="card">
+        <div class="card__header">
+            <img class="card__image" src="images/nightcity.jpg" alt="Obrázek děje">
+        </div>
+        <div class="card__body">
+            <h2 class="card__title">Run for your life</h2>
+            <p class="card__text">"Vypadá to, že jsem je prozatím setřásl. Kam teď?? Na střechu? Ztratit se v davu? </p>
+        
+        <div class="card__footer">
+            <a href="zabij-sefy13.html" class="button">Vylézt na střechu</a>
+            <a href="zabij-sefy16.html" class="button">Ztratit se v davu</a>
+        </div></div>
+    </div>
+</div>
+</main>
+<audio autoplay loop class="background-music">
+    <source src="audios/Gun Fight (Shoot Out) - Sound Effect  ProSounds.mp3" type="audio/mp3">
+    Váš prohlížeč nepodporuje tag audio.
+</audio>
+
+<script>        function muteAllSounds() {
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => audio.volume = 0.0005);
+}
+window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+</html>

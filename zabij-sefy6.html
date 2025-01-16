@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabij korporáta</title>
+</head>
+<body>
+<main>
+    <div class="card">
+        <div class="card__header">
+            <img class="card__image" src="images/01616-3744150611.jpg" alt="Obrázek děje">
+        </div>
+        <div class="card__body">
+            <h2 class="card__title">Zrada</h2>
+            <p class="card__text">Sakra au, kde to jsem.. Au, on mě praštil do hlavy a zamkl mě tu. Proč slyším hlasy?! Proč je tak těžké se postavit na nohy? Musím odsud hned utéct, nevím co by ode mě chtěl, vždyť se známe tak dlouho, proč by něco takového dělal. Že by chtěl můj cyberware?</p>
+        
+        <div class="card__footer">
+            <a href="zabij-sefy8.html" class="button" id="clickButton">Rozbít okno, skočit ze 2. patra a ztratit se v městském davu</a>
+            <a href="zabij-sefy5.html" class="button">Počkat až se Fixer vrátí a udeřit ho kamenem</a>
+        </div></div>
+    </div>
+</div>
+
+<audio autoplay loop class="background-music">
+    <source src="audios/Voices in my Head Sound Effect Fx.mp3" type="audio/mp3">
+    Váš prohlížeč nepodporuje tag audio.
+</audio>
+<audio id="clickSound">
+    <source src="audios/Glass breaking sound effect (DOWNLOAD, ORIGINAL).mp3" type="audio/mp3">
+    Váš prohlížeč nepodporuje tag audio.
+</audio>
+</main>
+
+<script>        function muteAllSounds() {
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => audio.volume = 0.01);
+}
+
+const button = document.getElementById('clickButton');
+        const clickSound = document.getElementById('clickSound');
+
+        button.addEventListener('mouseover', function () {
+            clickSound.play();
+        });
+
+window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+</html>

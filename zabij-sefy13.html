@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zabij korporáta</title>
+</head>
+<body>
+<main>
+    <div class="card">
+        <div class="card__header">
+            <img class="card__image" src="images/mainscreen3.jpg" alt="Obrázek děje">
+        </div>
+        <div class="card__body">
+            <h2 class="card__title">Always on the edge Ending: </h2>
+            <p class="card__text">Vypadá to, že jsi utekl. Avšak jsi teď cílem mafie po tom, co jsi se pokusil o atentát nejvlivnější osoby v Night City.. Užívej života dokud trvá, nebo se někam zašij. To, že tě někdy najdou a dopadnou, snad už víš..</p>
+        
+        <div class="card__footer">
+        </div></div>
+    </div>
+</div>
+</main>
+<audio autoplay loop class="background-music">
+    <source src="audios/Cyberpunk 2077 - Soundtrack OST - Main Menu Theme 'In Game Version'.mp3" type="audio/mp3">
+    Váš prohlížeč nepodporuje tag audio.
+</audio>
+
+<script>        function muteAllSounds() {
+    const audios = document.querySelectorAll("audio");
+    audios.forEach(audio => audio.volume = 0.01);
+}
+window.addEventListener('DOMContentLoaded', muteAllSounds);
+</script>
+</body>
+</html>

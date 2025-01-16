@@ -1,0 +1,61 @@
+body {
+    --primary: rgb(25, 24, 27);
+    --white: rgb(255, 255, 255);
+    --initbutton: #555;
+    --hoverbutton: #777;
+    --black: #000000;
+}
+html{
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    background-color: var(--initbutton);
+    color: var(--white);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: var(--hoverbutton);
+}
+.button--cross{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor:not-allowed;
+    border: none;
+    background-color: var(--initbutton);
+    color: var(--white);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.button--cross:hover{
+    background-color: var(--black);
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 5px;
+    width: 90%;
+}
